@@ -1,0 +1,27 @@
+name: ogbench
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip=24.0
+  - scipy=1.14.1
+  - tqdm=4.66
+  - wandb=0.18.1
+  - numba=0.60.0
+  - pip:
+    - -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+    - distrax==0.1.5
+    - flax >= 0.8.4
+    - jax[cuda12] >= 0.4.26
+    - optax==0.2.2
+    - chex==0.1.87
+    - gymnasium[mujoco]==1.0.0
+    - shimmy[gym-v21,gym-v26]
+    - gym==0.24.1
+    - matplotlib==3.9.2
+    - moviepy==1.0.3
+    - shapely==2.0.6
+    - ml_collections==0.1.1
+    - lockfile==0.12.2
+    - jaxlib==0.4.28+cuda12.cudnn89
+    - PyOpenGL-accelerate
