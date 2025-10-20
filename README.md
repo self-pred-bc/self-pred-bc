@@ -20,7 +20,6 @@ We provide two implementations for doing BC with auxilliary BYOL-$`\gamma`$ in a
 
 
 #### antmaze-medium
-**byol_min**:
 ```bash
 # byol_min
 python3 main.py --train_steps=1000000 --eval_interval=100000 --save_interval=1000000 --log_interval=5000 --eval_episodes=50 --video_episodes=0 --agent=agents/byol_min.py --agent.actor_p_trajgoal=1.0 --agent.actor_p_randomgoal=0.0 --agent.alpha=0 --agent.discount=0.99 --agent.pred_loss_type=bdino --agent.pred_backwards=False --agent.pred_both=True --agent.action_forward=True --agent.use_obs_latent_dim=True --agent.value_latent_dim=64 --seed=0 --env_name=antmaze-medium --dataset_path=[path]/antmaze-medium-stitch-v0.npz --agent.alignment=6
